@@ -23,3 +23,18 @@ serviceWorkerRegistration.register();
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+// 画面をピンチイン、アウトできなくする
+const touchHandler = (event: any) => {
+  if (event.touches.length > 1) {
+    event.preventDefault();
+  }
+};
+document.addEventListener('touchstart', touchHandler, { passive: false });
+
+// 画面をスクロールできなくする
+// 画面のピンチイン、ピンチアウトもできなくなる
+const disableScroll = (event: any) => {
+  event.preventDefault();
+};
+// document.addEventListener('touchmove', disableScroll, { passive: false });

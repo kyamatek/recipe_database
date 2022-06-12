@@ -10,6 +10,6 @@ type InputProps = {
 export const Input = ({ label, register, required }: InputProps) => (
     <label>
         {label} :&nbsp;
-        <input {...register(label, { required })} />
+        <input className="inputBox" {...register(label, { required })} />
     </label>
 );
