@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.addData {
+  background-color: rgb(84, 223, 84);
+  font-size: 20pt;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+}
+
+.clearData {
+  background-color: rgb(236, 130, 130);
+  font-size: 20pt;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+}
